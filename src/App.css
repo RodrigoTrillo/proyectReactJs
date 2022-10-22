@@ -45,10 +45,12 @@
   flex-wrap: wrap;
   justify-content: space-around;
   width: 700px;
+ 
 }
 
 .product-image {
   border-radius: 10px;
+  box-shadow: 0 0 5px 5px #cb4335;
 }
 
 @keyframes App-logo-spin {
