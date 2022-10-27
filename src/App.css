@@ -51,6 +51,15 @@
 .product-image {
   border-radius: 10px;
   box-shadow: 0 0 5px 5px #cb4335;
+  transition: transform 1s; 
+}
+
+.product-image:hover{
+  transform: scale(1.5); 
+}
+
+.carritoIcono{
+  width: 5rem;
 }
 
 @keyframes App-logo-spin {

@@ -1,7 +1,7 @@
 
 import './App.css';
 import './components/NavBar.css';
-import React from 'react';
+import React, { useState } from 'react';
 import Button from './components/Button';
 import NavBar from "./components/NavBar";
 
@@ -39,6 +39,17 @@ const products = [
 function App() {
   const onHandleClick = () => {
     console.log('was clicked')
+   /*  const [clicks, setCliks] = useState(0);
+    const [time , setTime] useState(0); */
+    const date = new Date();
+    const day = date.getDay();
+    const month = date.getMonth();
+    const year = date.getFullYear();
+    const hour = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+    const timestamp = `${day}/${month}/${year}:${hour}:${minutes}:${seconds}:`
+    console.log(timestamp)
   }
 
   const onHandlerAddProduct = () => {
